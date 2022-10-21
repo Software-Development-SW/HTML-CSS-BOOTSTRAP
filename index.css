@@ -4,11 +4,44 @@
 
 body{
     background-color: #1C0046;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
 }
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
 
 .content{
     margin-left: 12%;
     margin-right: 12%;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: #39008e;
+}
+
+a{
+    transition: 0.3s color;
+}
+
+.menu{
+    height: 180px;
+}
+
+.menu svg{
+    color: #39008e;
+    width: 100px;
+    height: 100px;
+    margin-left: 89.5%;
+    margin-top: 90px;
+    position: fixed;
 }
 
 .hi{
@@ -17,47 +50,166 @@ body{
 
 .hi>.col-7{
     height: 100%;
-    background-color: red;
 }
 
 .hi-text{
-    margin-top: 57%;
+    margin-top: 25%;
+    color: white;
+    font-size: 124px;
+    font-weight: bold;
 }
 
 .hi>.col-5{
     height: 100%;
-    background-color: antiquewhite;
 }
 
-.hi-picture img{
-    margin-top: 57%;
+.hi-picture{
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.hi-picture-container{
+    background-image: url(./pictures/hi-picture.jpg);
+    background-position: center;
+    background-size: 475px;
+    width: 475px;
+    height: 475px;
+    border-radius: 33px;
 }
 
 
 .contact{
-    height: 1080px;
+    height: 500px;
 }
 
 .contact>.col-7{
     height: 100%;
-    background-color: aqua;
+    background-color: #1C0046;
 }
 
 .contact-text{
-    margin-top: 57%;
+
+    color: white;
+    font-size: 124px;
+    font-weight: bold;
 }
 
 .contact>.col-5{
     height: 100%;
-    background-color: fuchsia
+
+}
+
+ul{
+    list-style:none none inside;
+    margin:0px;
+    padding:0px;
+}
+
+
+li{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list li{
+    list-style: none;
+    padding: 1rem;
+}
+
+.contact-list-mail{
+    display: flex;
+}
+
+.contact-list-mail-text{
+    margin-left: 30px;
+    color: white;
+    font-size: 31px;
+    text-align: center;
+}
+
+
+.contact-list-mail-icon svg{
+    color: #39008e;
+    width: 50px;
+    height: 50px;
+}
+
+.contact-list-linkedin{
+    display: flex;
+}
+
+.contact-list-linkedin-text{
+    margin-left: 30px;
+    color: white;
+    font-size: 31px;
+}
+
+.contact-list-linkedin-icon svg{
+    color: #39008e;
+    width: 50px;
+    height: 50px;
+}
+
+
+.contact-list-github{
+    display: flex;
+}
+
+.contact-list-github-text{
+    margin-left: 30px;
+    color: white;
+    font-size: 31px;
+    margin-bottom: 30px;
+}
+
+.contact-list-github-icon svg{
+    color: #39008e;
+    width: 50px;
+    height: 50px;
 }
 
 .contact-picture{
-    margin-top: 57%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-picture svg{
+    color: #39008e;
+    width: 475px;
+    height: 475px;
 }
 
 .form{
-    height: 1080px;
-    background-color: bisque;
-    align-items: center;
+    background-color: #1C0046;
+    justify-content: start;
+}
+
+.form-form{
+    width: 680px;
+}
+
+.form-form div{
+    margin-bottom: 30px;
+}
+
+.form-control{
+    border: none;
+    height: 100px;
+    border-radius: 15px;
+}
+
+button{
+    border: none;
+    background-color: #39008e;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 180px;
+}
+
+.btn:hover{
+    background-color: #39008e;
+    border: none;
 }
