@@ -1,0 +1,63 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #1C0046;
+}
+
+.content{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.hi{
+    height: 1080px;
+}
+
+.hi>.col-7{
+    height: 100%;
+    background-color: red;
+}
+
+.hi-text{
+    margin-top: 57%;
+}
+
+.hi>.col-5{
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.hi-picture img{
+    margin-top: 57%;
+}
+
+
+.contact{
+    height: 1080px;
+}
+
+.contact>.col-7{
+    height: 100%;
+    background-color: aqua;
+}
+
+.contact-text{
+    margin-top: 57%;
+}
+
+.contact>.col-5{
+    height: 100%;
+    background-color: fuchsia
+}
+
+.contact-picture{
+    margin-top: 57%;
+}
+
+.form{
+    height: 1080px;
+    background-color: bisque;
+    align-items: center;
+}
